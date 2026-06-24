@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dsj4rbwpu5x3d"]
+
+[ext_resource type="Script" uid="uid://fcskc16tvpvh" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://d350u8evihs1u" path="res://addons/netfox/rollback/rollback-synchronizer.gd" id="2_onrkg"]
+
+[node name="Player" type="Node2D" unique_id=1068633046]
+script = ExtResource("1_4flbx")
+
+[node name="RollbackSynchronizer" type="Node" parent="." unique_id=1691178423 node_paths=PackedStringArray("root")]
+script = ExtResource("2_onrkg")
+root = NodePath("..")
+state_properties = Array[String]([":network_position"])
+metadata/_custom_type_script = "uid://d350u8evihs1u"
